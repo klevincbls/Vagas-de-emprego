@@ -1,0 +1,288 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KlevinImports | Trabalhe Conosco</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="topbar">
+    <a class="brand" href="#inicio">
+      <span class="brand-mark">KI</span>
+      <span>Klevin<span class="orange">Imports</span>
+        <small>TÊNIS É AQUI!</small>
+      </span>
+    </a>
+
+    <nav>
+      <a href="#inicio">Início</a>
+      <a href="#sobre">Sobre nós</a>
+      <a href="#vagas">Vagas</a>
+      <a href="#candidatura">Cadastre-se</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="hero" id="inicio">
+      <div class="hero-copy">
+        <p class="eyebrow">VENHA FAZER PARTE DO NOSSO TIME!</p>
+
+        <h1>Estamos<br>
+          <span>contratando!</span>
+        </h1>
+
+        <p class="intro">
+          A KlevinImports está crescendo e busca pessoas
+          determinadas, apaixonadas por sneakers e que
+          queiram fazer a diferença.
+        </p>
+
+        <a class="cta" href="#candidatura">
+          Cadastre-se agora →
+        </a>
+      </div>
+
+      <div class="hero-art">
+        <div class="glow"></div>
+        <div class="shelf shelf-one"></div>
+
+        <div class="shoe shoe-back">K</div>
+
+        <div class="shoebox">
+          <strong>Klevin<span class="orange">Imports</span></strong>
+          <small>TÊNIS É AQUI!</small>
+        </div>
+
+        <div class="shoe shoe-front">KI</div>
+
+        <p class="art-note">
+          MAIS QUE TÊNIS,<br>
+          É ESTILO DE VIDA.
+        </p>
+      </div>
+    </section>
+
+    <section class="content-grid">
+
+      <div class="about" id="sobre">
+        <p class="eyebrow">CRESÇA COM A GENTE</p>
+
+        <h2>
+          Por que trabalhar na<br>
+          <span>KlevinImports?</span>
+        </h2>
+
+        <div class="benefits">
+
+          <article class="benefit">
+            <span class="benefit-icon">↗</span>
+            <h3>Crescimento</h3>
+            <p>
+              Faça parte de uma empresa que está
+              sempre evoluindo.
+            </p>
+          </article>
+
+          <article class="benefit">
+            <span class="benefit-icon">♧</span>
+            <h3>Ambiente jovem</h3>
+            <p>
+              Respeito, trabalho em equipe e boa
+              energia fazem a diferença.
+            </p>
+          </article>
+
+          <article class="benefit">
+            <span class="benefit-icon">☆</span>
+            <h3>Oportunidade de aprendizado</h3>
+            <p>
+              Desenvolva suas habilidades e construa
+              seu futuro conosco.
+            </p>
+          </article>
+
+          <article class="benefit">
+            <span class="benefit-icon">⌁</span>
+            <h3>Paixão por sneakers</h3>
+            <p>
+              Se você ama tênis, esse também
+              é o seu lugar.
+            </p>
+          </article>
+
+        </div>
+
+        <p class="handwritten">
+          JUNTOS, VAMOS MAIS LONGE!
+        </p>
+
+        <section class="vacancies" id="vagas">
+          <p class="eyebrow">OPORTUNIDADES ABERTAS</p>
+
+          <h2>Escolha sua <span>vaga</span></h2>
+
+          <ul>
+            <li>
+              <span>
+                <b>Vendedor(a)</b>
+                <small>Atendimento e experiência do cliente</small>
+              </span>
+              <span class="tag">Loja</span>
+            </li>
+
+            <li>
+              <span>
+                <b>Estoquista</b>
+                <small>Organização e controle de produtos</small>
+              </span>
+              <span class="tag">Estoque</span>
+            </li>
+
+            <li>
+              <span>
+                <b>Auxiliar administrativo</b>
+                <small>Rotinas administrativas e cadastro</small>
+              </span>
+              <span class="tag">Escritório</span>
+            </li>
+
+            <li>
+              <span>
+                <b>Jovem Aprendiz</b>
+                <small>Aprendizado e apoio à equipe</small>
+              </span>
+              <span class="tag">Entrada</span>
+            </li>
+          </ul>
+        </section>
+      </div>
+
+      <section class="form-card" id="candidatura">
+
+        <div class="form-heading">
+          <span class="person-icon">♙</span>
+
+          <div>
+            <h2>Cadastre-se</h2>
+            <p>e concorra às nossas vagas!</p>
+          </div>
+        </div>
+
+        <form id="formulario">
+
+          <label for="nome">Nome completo <b>*</b></label>
+          <input
+            id="nome"
+            name="nome"
+            type="text"
+            placeholder="Digite seu nome"
+            autocomplete="name"
+            required
+          >
+
+          <label for="email">E-mail <b>*</b></label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            placeholder="Digite seu e-mail"
+            autocomplete="email"
+            required
+          >
+
+          <label for="telefone">Telefone <b>*</b></label>
+          <input
+            id="telefone"
+            name="telefone"
+            type="tel"
+            placeholder="(00) 00000-0000"
+            autocomplete="tel"
+            required
+          >
+
+          <label for="vaga">Vaga de interesse <b>*</b></label>
+          <select id="vaga" name="vaga" required>
+            <option value="">Selecione uma vaga</option>
+            <option value="Vendedor(a)">Vendedor(a)</option>
+            <option value="Estoquista">Estoquista</option>
+            <option value="Auxiliar administrativo">
+              Auxiliar administrativo
+            </option>
+            <option value="Jovem Aprendiz">Jovem Aprendiz</option>
+          </select>
+
+          <label for="escolaridade">Escolaridade <b>*</b></label>
+          <select id="escolaridade" name="escolaridade" required>
+            <option value="">Selecione sua escolaridade</option>
+            <option value="Ensino fundamental">
+              Ensino fundamental
+            </option>
+            <option value="Ensino médio cursando">
+              Ensino médio cursando
+            </option>
+            <option value="Ensino médio completo">
+              Ensino médio completo
+            </option>
+            <option value="Ensino superior cursando">
+              Ensino superior cursando
+            </option>
+            <option value="Ensino superior completo">
+              Ensino superior completo
+            </option>
+          </select>
+
+          <label for="experiencia">Conte sobre você</label>
+          <textarea
+            id="experiencia"
+            name="experiencia"
+            rows="4"
+            placeholder="Conte sobre sua experiência e suas habilidades"
+          ></textarea>
+
+          <button type="submit">
+            ➤ &nbsp; Enviar candidatura
+          </button>
+
+          <p id="aviso" role="status" aria-live="polite"></p>
+
+          <small class="privacy">
+            🔒 Seus dados serão usados para avaliar sua candidatura.
+          </small>
+
+        </form>
+      </section>
+
+    </section>
+  </main>
+
+  <footer>
+
+    <a class="brand footer-brand" href="#inicio">
+      <span class="brand-mark">KI</span>
+      <span>Klevin<span class="orange">Imports</span>
+        <small>TÊNIS É AQUI!</small>
+      </span>
+    </a>
+
+    <div class="contact">
+      <p>📍 Av. Principal, 123 — Centro</p>
+      <p>☎ (61) 99999-9999</p>
+      <p>◎ @klevinimports</p>
+    </div>
+
+    <p class="footer-slogan">
+      SONHE. CONQUISTE.<br>
+      USE.
+    </p>
+
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

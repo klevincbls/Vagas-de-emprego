@@ -1,0 +1,588 @@
+
+/* ========================================
+   KLEVINIMPORTS - ESTILO GERAL
+======================================== */
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --laranja: #ff6a00;
+  --laranja-claro: #ff8a00;
+  --preto: #080808;
+  --painel: #101010;
+  --branco: #f7f7f7;
+  --cinza: #b8b8b8;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--preto);
+  color: var(--branco);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.orange,
+h1 span,
+h2 span {
+  color: var(--laranja);
+}
+
+/* ========================================
+   CABEÇALHO E MENU
+======================================== */
+
+.topbar {
+  min-height: 82px;
+  padding: 14px 5.5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  border-bottom: 1px solid #542500;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 26px;
+  font-weight: 800;
+  letter-spacing: -0.8px;
+  line-height: 1;
+}
+
+.brand-mark {
+  display: grid;
+  place-items: center;
+  width: 46px;
+  height: 42px;
+  border: 2px solid var(--laranja);
+  color: var(--laranja);
+  transform: skew(-10deg);
+  font-size: 18px;
+}
+
+.brand small {
+  display: block;
+  margin-top: 6px;
+  color: #ccc;
+  font-size: 9px;
+  letter-spacing: 3px;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  font-size: 14px;
+}
+
+nav a {
+  transition: color 0.2s;
+}
+
+nav a:hover {
+  color: var(--laranja);
+}
+
+/* ========================================
+   SEÇÃO PRINCIPAL
+======================================== */
+
+.hero {
+  display: grid;
+  grid-template-columns: 0.92fr 1.08fr;
+  min-height: 390px;
+  padding: 46px 5.5% 38px;
+  align-items: center;
+  gap: 30px;
+  border-bottom: 1px solid #252525;
+  overflow: hidden;
+}
+
+.eyebrow {
+  color: var(--laranja);
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 1.6px;
+}
+
+h1 {
+  margin: 12px 0 20px;
+  font-size: clamp(42px, 5.5vw, 72px);
+  line-height: 0.98;
+  letter-spacing: -2px;
+}
+
+.intro {
+  max-width: 430px;
+  color: #d3d3d3;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 18px;
+  margin-top: 12px;
+  padding: 14px 22px;
+  border-radius: 28px;
+  color: #111;
+  background: linear-gradient(
+    100deg,
+    var(--laranja-claro),
+    var(--laranja)
+  );
+  font-weight: 800;
+  font-size: 14px;
+  transition: transform 0.2s;
+}
+
+.cta:hover {
+  transform: translateY(-3px);
+}
+
+/* ========================================
+   ILUSTRAÇÃO DECORATIVA DOS TÊNIS
+======================================== */
+
+.hero-art {
+  position: relative;
+  isolation: isolate;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 300px;
+  border-radius: 12px;
+  background: radial-gradient(
+    ellipse at 55% 45%,
+    #5a270b 0%,
+    #21140d 35%,
+    #0b0b0b 70%
+  );
+}
+
+.glow {
+  position: absolute;
+  z-index: -1;
+  bottom: 24%;
+  width: 85%;
+  height: 4px;
+  background: var(--laranja);
+  box-shadow: 0 0 24px var(--laranja);
+  transform: rotate(-3deg);
+}
+
+.shelf {
+  position: absolute;
+  left: 6%;
+  width: 88%;
+  height: 9px;
+  border-radius: 5px;
+  background: linear-gradient(#555, #171717);
+}
+
+.shelf-one {
+  top: 23%;
+  transform: rotate(-2deg);
+}
+
+.shoebox {
+  position: absolute;
+  top: 37%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 52%;
+  min-height: 105px;
+  border: 1px solid #4d4d4d;
+  background: linear-gradient(145deg, #242424, #050505);
+  box-shadow: 0 16px 25px #000;
+  font-size: clamp(15px, 2vw, 24px);
+  font-weight: 800;
+  transform: perspective(400px) rotateY(-7deg);
+}
+
+.shoebox small {
+  margin-top: 7px;
+  color: #bbb;
+  font-size: 8px;
+  letter-spacing: 3px;
+}
+
+.shoe {
+  position: absolute;
+  display: grid;
+  place-items: center;
+  width: 42%;
+  height: 68px;
+  border-radius: 48% 18% 22% 30%;
+  border-bottom: 8px solid #333;
+  background: linear-gradient(165deg, #fff, #d7d7d7 55%, #777);
+  box-shadow: 0 14px 18px #0009;
+  color: #161616;
+  font-size: 25px;
+  font-weight: 900;
+  font-style: italic;
+  transform: skew(-17deg) rotate(-8deg);
+}
+
+.shoe-back {
+  top: 17%;
+  left: 25%;
+}
+
+.shoe-front {
+  right: 12%;
+  bottom: 16%;
+  width: 46%;
+  background: linear-gradient(165deg, #fff, #f1f1f1 55%, #999);
+}
+
+.art-note {
+  position: absolute;
+  top: 4%;
+  right: 3%;
+  color: var(--laranja);
+  font-size: 13px;
+  font-weight: 900;
+  font-style: italic;
+  line-height: 1.3;
+  transform: rotate(5deg);
+}
+
+/* ========================================
+   CONTEÚDO E BENEFÍCIOS
+======================================== */
+
+.content-grid {
+  display: grid;
+  grid-template-columns: 1fr minmax(340px, 0.95fr);
+  align-items: start;
+  gap: 5%;
+  padding: 42px 5.5% 48px;
+}
+
+.about h2,
+.vacancies h2 {
+  margin: 8px 0 30px;
+  font-size: clamp(28px, 3.4vw, 42px);
+  line-height: 1.08;
+}
+
+.benefits {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px 24px;
+}
+
+.benefit-icon {
+  color: var(--laranja);
+  font-size: 34px;
+  font-weight: 800;
+}
+
+.benefit h3 {
+  margin: 8px 0;
+  font-size: 17px;
+}
+
+.benefit p {
+  max-width: 250px;
+  margin: 0;
+  color: #c8c8c8;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.handwritten {
+  margin: 36px 0;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #8b3a00;
+  color: var(--laranja);
+  text-align: center;
+  font-size: clamp(18px, 2.4vw, 27px);
+  font-weight: 900;
+  font-style: italic;
+}
+
+/* ========================================
+   LISTA DE VAGAS
+======================================== */
+
+.vacancies {
+  margin-top: 28px;
+}
+
+.vacancies h2 {
+  margin-bottom: 18px;
+}
+
+.vacancies ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.vacancies li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 15px 0;
+  border-bottom: 1px solid #292929;
+}
+
+.vacancies li small {
+  display: block;
+  margin-top: 5px;
+  color: #aaa;
+  line-height: 1.4;
+}
+
+.tag {
+  padding: 5px 10px;
+  border: 1px solid #8c3a00;
+  border-radius: 20px;
+  color: var(--laranja);
+  font-size: 11px;
+  white-space: nowrap;
+}
+
+/* ========================================
+   FORMULÁRIO DE CANDIDATURA
+======================================== */
+
+.form-card {
+  padding: 30px;
+  border: 2px solid var(--laranja);
+  border-radius: 16px;
+  background: linear-gradient(145deg, #101010, #050505);
+  box-shadow: 0 0 28px #ff6a0010;
+}
+
+.form-heading {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.person-icon {
+  color: var(--laranja);
+  font-size: 48px;
+  line-height: 1;
+}
+
+.form-heading h2 {
+  margin: 0 0 6px;
+  font-size: 28px;
+}
+
+.form-heading p {
+  margin: 0;
+  color: #ccc;
+}
+
+form label {
+  display: block;
+  margin: 14px 0 7px;
+  color: #eee;
+  font-size: 13px;
+}
+
+form label b {
+  color: var(--laranja);
+}
+
+input,
+select,
+textarea {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #555;
+  border-radius: 7px;
+  outline: none;
+  background: #0c0c0c;
+  color: var(--branco);
+  font-family: inherit;
+  font-size: 13px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: var(--laranja);
+  box-shadow: 0 0 0 2px #ff6a0025;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #8d8d8d;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  width: 100%;
+  margin-top: 16px;
+  padding: 14px 12px;
+  border: 0;
+  border-radius: 8px;
+  background: linear-gradient(
+    100deg,
+    var(--laranja-claro),
+    var(--laranja)
+  );
+  color: #111;
+  font-size: 15px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+button:hover {
+  filter: brightness(1.08);
+}
+
+button:disabled {
+  opacity: 0.65;
+  cursor: wait;
+}
+
+#aviso {
+  font-size: 13px;
+  line-height: 1.45;
+  overflow-wrap: anywhere;
+}
+
+#aviso.success {
+  color: #77e69a;
+}
+
+#aviso.error {
+  color: #ff9b86;
+}
+
+.privacy {
+  display: block;
+  margin-top: 12px;
+  color: #aaa;
+  text-align: center;
+  font-size: 10px;
+}
+
+/* ========================================
+   RODAPÉ
+======================================== */
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+  padding: 28px 5.5%;
+  border-top: 1px solid var(--laranja);
+}
+
+.footer-brand {
+  font-size: 22px;
+}
+
+.contact {
+  color: #bbb;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.contact p {
+  margin: 6px 0;
+}
+
+.footer-slogan {
+  color: var(--laranja);
+  font-size: 19px;
+  font-weight: 900;
+  font-style: italic;
+  transform: rotate(-5deg);
+}
+
+/* ========================================
+   RESPONSIVIDADE PARA TABLETS E CELULARES
+======================================== */
+
+@media (max-width: 850px) {
+  .topbar {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  nav {
+    gap: 18px;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-art {
+    min-height: 290px;
+  }
+
+  .content-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form-card {
+    width: 100%;
+    max-width: 620px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 520px) {
+  .benefits {
+    gap: 24px 14px;
+  }
+
+  .benefit h3 {
+    font-size: 15px;
+  }
+
+  .benefit p {
+    font-size: 13px;
+  }
+
+  footer {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .hero {
+    padding-top: 34px;
+  }
+
+  .hero-art {
+    min-height: 250px;
+  }
+
+  .form-card {
+    padding: 20px;
+  }
+}
